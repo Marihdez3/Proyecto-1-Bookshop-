@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta name="author" content="MARI">
+    <meta name="keywords" content="books">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookshop</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+
+    <header>
+        <div>
+            <img src="./images/logo.png" alt="tienda de libros">
+            <div>
+                <h1>BOOKSHOP</h1>
+            </div>
+
+            <div class="buscador">
+                   <input type="text" id="buscar" placeholder="  Busca por título, autor o género"> 
+                   <input type="submit" id="lupa" value="🔎">
+            </div>  
+
+            <nav>
+            <a href="#" target="_blank">
+                <span class="palabra">Inicio</span>
+                <span class="emoji">🏠</span>
+            </a>
+            <a href="#" target="_blank">
+                <span class="palabra">Catálogo</span>
+                <span class="emoji">📚</span>
+            </a>
+            <a href="#" target="_blank">
+                <span class="palabra">Contaco</span>
+                <span class="emoji">📲</span>
+            </a>
+            <a href="#" target="_blank">
+                <span class="palabra">Cesta</span>
+                <span class="emoji">🧺</span>
+            </a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <h2>Encuentra tu próxima lectura</h2>
+        <p>Una selección exclusiva de los mejores libros con enlaces directos a tiendas oficiales</p>
+    </section>
+
+    <main id="catalogo" class="store-container">
+
+        <section class="book-grid" id="book-grid">
+            
+            <div class="tarjeta-libro" data-genre="fantasia">
+                <div class="badge">Fantasía</div>
+                <h3>Alas de Sangre</h3>
+                <p class="author">Rebecca Yarros</p>
+                <img src="./images/alas-de-sangre.jpg" alt="portada del libro">
+                <p class="price">22.00 €</p>
+                <div class="links">
+                    <a href="https://www.amazon.es/Emp%C3%ADreo-Planeta-Internacional-versi%C3%B3n-espa%C3%B1ol/dp/8408279998/ref=tmm_hrd_swatch_0?_encoding=UTF8&qid=1791540186&sr=8-1-spons" target="_blank" class="btn-shop amazon">Amazon</a>
+                    <a href="https://www.casadellibro.com/libro-alas-de-sangre-empireo-1/9788408279990/14058020?gad_source=1&gad_campaignid=10331752028&gclid=CjwKCAjwoaLWBhAWEiwAnyitux8BHwcQ4ml4QtK4LJ-bkpAgIE2OuW0lDJCVyr_BupFizi8LhICUohoCA2YQAvD_BwE&idtipoproducto=1&campaignid=10331752028&gbraid=0AAAAADya_kTUr_YzgMmcWQLU3HeT04VDQ&idproducto=14058020" target="_blank" class="btn-shop casa">Casa del Libro</a>
+                </div>
+            </div>
+
+            <div class="tarjeta-libro" data-genre="ficción distópica">
+                <div class="badge">Ficción distópica</div>
+                <h3>1984</h3>
+                <p class="author">George Orwell</p>
+                <img src="./images/1984.jpg" alt="">
+                <p class="price">21.50 €</p>
+                <div class="links">
+                    <a href="https://www.amazon.es/1984-Edici%C3%B3n-Definitiva-Avalada-Orwell/dp/6073844328/ref=tmm_hrd_swatch_0?_encoding=UTF8&dib_tag=se&dib=eyJ2IjoiMSJ9.P1rLr-sJOBEAK_N78hIhkhIBZtMX2D0SRuuq08IM8J7k6f2az509ZNkswq2x2xXTkPHIULOUys5UObnbg0-d_OF589dM7tumWxGibdMVMucj8GwWFW0MjB8yUJL9M0SZJzgJJ1pPGoDDeaPWRMYZY4TwR1S-MhqehQOWV0WbbSVKbzkPuhgRasAoAAinhr3_M-mUq2yeBkHt2cIhw16VBjKGbJr9M2uirSGpa7GmwNBUcFq8MwmL0PCpHtcRQ18b7UvusjpNyUQuH7xhD44ql-ZWEhZ48RhdnEVbAxyyT6g.SEJJ11-E1HWg5zQob0dvVDyqNIP1RL9rt254t0DQDCs&qid=1791540657&sr=8-3-spons" target="_blank" class="btn-shop amazon">Amazon</a>
+                    <a href="https://www.casadellibro.com/libro-1984/9788423365050/15863724" target="_blank" class="btn-shop casa">Casa del Libro</a>
+                </div>
+            </div>
+            <div class="tarjeta-libro" data-genre="Thriller">
+                <div class="badge">Thriller</div>
+                <h3>El cuarto mono</h3>
+                <p class="author">J.D. Barker</p>
+                <img src="./images/el-cuarto-mono.jpg" alt="portada del libro">
+                <p class="price">12.30 €</p>
+                <div class="links">
+                    <a href="https://www.amazon.es/El-Cuarto-Mono-Crimen-Misterio/dp/8423355659/ref=sr_1_1?__mk_es_ES=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=24FEYY0GDP19H&dib=eyJ2IjoiMSJ9.BerMo28jI5KRWrTkqX_-O4TjvLZ0S53OLvsV9ZsetRWPGIMaXBlKdKpqQ8gQ1PZBslJeGTn9_c3hS5xpnZUtKEIIqC93_3pjg0lh7-jCwkVGPIrpns438xape1a24hbr0aIN0czkI4E9-EDGvx7nWVRvgg6oo0ppzuKiTL28cn6En7mLOH5ffMyIBLDO9ozhnE5gq-KfTzKhJQKaDxFlLzINkdHwfxSZ30SVGALCyhDqrs6nlKqUF4nrfa1cndxivTwIiSzJnoORWmTH3LsLTLxZKY0_VzseMPlkWHTTYI4.8oOiZbz1xhL84otl2lU53etoWFXkHp0xbvrY8373pFw&dib_tag=se&keywords=el+cuarto+mono&qid=1791541528&sprefix=el+cuarto+mono%2Caps%2C131&sr=8-1" target="_blank" class="btn-shop amazon">Amazon</a>
+                    <a href="https://www.casadellibro.com/libro-el-cuarto-mono/9788423355655/9184480" target="_blank" class="btn-shop casa">Casa del Libro</a>
+                </div>
+            </div>
+            <div class="tarjeta-libro" data-genre="Thriller">
+                <div class="badge">Thriller</div>
+                <h3>La asistenta</h3>
+                <p class="author">Freida Mcfadden</p>
+                <img src="./images/la-asistenta.jpg" alt="portada del libro">
+                <p class="price">18.90 €</p>
+                <div class="links">
+                    <a href="https://www.amazon.es/asistenta-adictivo-thriller-arrasando-internacionalmente/dp/8491294287/ref=sr_1_1?crid=39M5T5XB2VKRY&dib=eyJ2IjoiMSJ9.xQArwdtQOZboBcmK-yA_V76hV3tARFO3B5bZywRsISpIpheJvF1c_IUFvS13avX8AEbyBdTIwEevVEOBQJX3IuYxe68JiK1RrrmSpkYsP8y6N3tK1EaJ6v2cLQupfAfk5jf37h03rdMAivWY78kN0XCaLrzKFCCMD0sxMc88_IZFmMDgz0v8YqRPfjkcvVzDJ6qMaB1EFSDqVeE41hUCH6B7ntd6d5QWBwP7qO0gJkIBM0BpMQ13LPxyFLRD230vjGZlLOJ26IgVh0GYibULizZ0QHNYbKx2zD-8hfGfymY.2UnTrozKw8ZAJj-MXWUcnTbK4O4tbuEEmxfLtE_7MLc&dib_tag=se&keywords=la+asistenta&qid=1791542394&sprefix=la+asiste%2Caps%2C135&sr=8-1" target="_blank" class="btn-shop amazon">Amazon</a>
+                    <a href="https://www.casadellibro.com/libro-la-asistenta/9788491294283/13931484" target="_blank" class="btn-shop casa">Casa del Libro</a>
+                </div>
+            </div>
+            <div class="tarjeta-libro" data-genre="Romántica">
+                <div class="badge">Romántica</div>
+                <h3>Hasta que nos quedemos sin estrellas</h3>
+                <p class="author">Inma Rubiales</p>
+                <img src="./images/hasta-que-nos-quedemos-sin-estrellas.jpg" alt="portada del libro">
+                <p class="price">11.35 €</p>
+                <div class="links">
+                    <a href="https://www.amazon.es/Hasta-que-quedemos-estrellas-Novela/dp/8408267620/ref=sr_1_5?__mk_es_ES=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=221N5NGTVP52M&dib=eyJ2IjoiMSJ9.SoibBI5Ww61uFXjGH6o8JCMkDDlSLnmjRW32kggi4t40BdgD9gG2cSzDOLb9Y0nJDlNPNi_QP3x1Yxr7ZtbFBnxDcTbWQKbu2Z9hWetEuUR3FcgxXIvEv0nfS_OrnuVFohytnIpitzVQXl6eo-hmzhO7MU6HGaeHCVEvk6RxIFtXRBELDXWUwpZljcclBOhgRjnvFhOZfEZManE6EOIXBZPdRaHQURssAKZExQzbNSY.KpVFptmlbixCAgkGo7iWhsG3YFA_w9nIdVpFvhhhB0M&dib_tag=se&keywords=libro+romantico&qid=1791543571&s=books&sprefix=libro+romantico%2Cstripbooks%2C116&sr=1-5" target="_blank" class="btn-shop amazon">Amazon</a>
+                    <a href="https://www.casadellibro.com/libro-hasta-que-nos-quedemos-sin-estrellas/9788408267621/13306800" target="_blank" class="btn-shop casa">Casa del Libro</a>
+                </div>
+            </div>
+
+            <div class="tarjeta-libro" data-genre="desarrollo personal">
+                <div class="badge">Desarrollo personal</div>
+                <h3>Hábitos Atómicos</h3>
+                <p class="author">James Clear</p>
+                <img src="./images/habitos-atomicos.jpg" alt="portada del libro">
+                <p class="price">20.80 €</p>
+                <div class="links">
+                    <a href="https://www.amazon.es/H%C3%A1bitos-at%C3%B3micos-Autoconocimiento-James-Clear/dp/8418118032/ref=sr_1_1?crid=13O1P63DZ9FPO&dib=eyJ2IjoiMSJ9.F8H0dDrznd6fmYW4_pd783zK2dgAupA8Wl1uu82XoyYz-lU5GY_CBKBWTou0gn5hiLxLIP31mAoJCoD2agF413tFKI1w2Nj96FKzA7B3yhy5B8fyZWWUP0cHDdgLerSSH26LC3WR1y5Sm-JIdhXMh0rhBueCAR2PWcTnysKRivlbOWs5BWUGOaTanfzVX6KvoV0QE6dx3Zy7Z5B89gr5Ja8jMLedkiZZvqQLn93p2Z8.e1Dgw4H6raChBMUi8-mRoGXlQAWGHs1UOw2mqW3faL4&dib_tag=se&keywords=habitos+atomicos&qid=1791543209&s=books&sprefix=habitos+a%2Cstripbooks%2C140&sr=1-1" target="_blank" class="btn-shop amazon">Amazon</a>
+                    <a href="https://www.casadellibro.com/libro-habitos-atomicos/9788418118036/11364192" target="_blank" class="btn-shop casa">Casa del Libro</a>
+                </div>
+            </div>
+            <div class="tarjeta-libro" data-genre="criminología">
+                <div class="badge">Criminología</div>
+                <h3>Nuevos perfiles criminales</h3>
+                <p class="author">Vicente Garrido</p>
+                <img src="./images/nuevos-perfiles-criminales.jpg" alt="portada del libro">
+                <p class="price">19.80 €</p>
+                <div class="links">
+                    <a href="https://www.amazon.es/Nuevos-perfiles-criminales-desaf%C3%ADos-investigaci%C3%B3n/dp/8434432994/ref=tmm_pap_swatch_0?_encoding=UTF8&dib_tag=se&dib=eyJ2IjoiMSJ9.P0pE2GMqLIRDevsIh-rycyE3IdWr0WeE8l7IwtwEUwPJuMt82QwCbxUUticl1vs8lhx9HeU4VAzYBE8h0zT2b8QkWXylChgTq_MLP4oM8318AepUgaJ6BFiJYK-Kkjln78gbyH3v_zfzVu6uo6CdLu-Tu67q_WJTKMasXvK26TQu4pLP5eiqrLRBwEX7s_oFtW-ngPQfSTcD8k2yD-f1IjwHZJfi9hA1tE6JwZ2r0So8tcmv7h5oqMBkCBu2qhJhN-BZLkBEZp74jB6x4W9QYLBcxEhlzj3r79H9fE4caxo.JGBSHj4WqjKl6fjbzugdUMvrCM02qBvQ_iO6cxhfoNs&qid=1791557436&sr=8-1" target="_blank" class="btn-shop amazon">Amazon</a>
+                    <a href="https://www.casadellibro.com/libro-nuevos-perfiles-criminales/9788434432994/11667780" target="_blank" class="btn-shop casa">Casa del Libro</a>
+                </div>
+            </div>
+
+            <div class="tarjeta-libro" data-genre="Fantasía">
+                <div class="badge">Fantasía</div>
+                <h3>Alas de hierro</h3>
+                <p class="author">Rebecca Yarros</p>
+                <img src="./images/alas-de-hierro.webp" alt="portada del libro">
+                <p class="price">22.70 €</p>
+                <div class="links">
+                    <a href="https://www.amazon.es/Alas-Hierro-Emp%C3%ADreo-Planeta-Internacional/dp/840828455X/ref=sr_1_1?__mk_es_ES=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=226XNR348LQK2&dib=eyJ2IjoiMSJ9.4BDtPHVnhd4YLXv_9cHmIs1xhRvGb8N9kUFpIAIG26NS9iEAdvbMX9bjIMWWq1_EjJllrC4oK_N-Isgsg4MD6JeNMmS9uz8GjOnJjvFsI1taXQi9VFPDJXr9Vh2rM5SEQnPf1MPSXhF0gBYCkVANJVFskxFTLXRq91jClHNeW6YypnidwxKQvIQMY_-bmOE-aT1Ah3-GDDnie2FGckCtTnvDlNH-fcJtNWd5aIfnY86lZkFoVYLhi8In-I4nf953_rjxF9nflFzOPpTEQ0k4kXnJzxecdYBt7I_AEExqTTE.wpmkN1BLV0MRMYFuw56fbw2gT6E_Zh3bA0yeFK9wXrM&dib_tag=se&keywords=alas+de+hierro&qid=1791557997&sprefix=alas+de+hierro%2Caps%2C138&sr=8-1" target="_blank" class="btn-shop amazon">Amazon</a>
+                    <a href="https://www.casadellibro.com/libro-alas-de-hierro-empireo-2/9788408284550/14434148" target="_blank" class="btn-shop casa">Casa del Libro</a>
+                </div>
+            </div>
+            <div class="tarjeta-libro" data-genre="Thriller">
+                <div class="badge">Thriller</div>
+                <h3>El cuco de cristal</h3>
+                <p class="author">Javier Castillo</p>
+                <img src="./images/el-cuco-de-cristal.jpg" alt="portada del libro">
+                <p class="price">21.75 €</p>
+                <div class="links">
+                    <a href="https://www.amazon.es/cuco-cristal-SUMA-Javier-Castillo/dp/8491293558/ref=tmm_pap_swatch_0?_encoding=UTF8&dib_tag=se&dib=eyJ2IjoiMSJ9.UhwAD2ey1t_uOE4NlNf0hqx4Tr91qzY3M3sRicxKeWRdSmG0IhWFjT8oPgkE2Y5PbRtFdBDVdQNk4z7WbA9bWLRjypPgl13ah1BxZ7pOo9jNyQpheolGfch_-xb660Je8W_uQUMNBOOUN8372LzqpKRho8fblKUATD-9rQFjJzTFBCx3HB91b55QWgsG4N8ad_PXtRVNL8RtliZcKB-ETX8DF5Q9bfWbHl613bO6wQAKacMX2db9QAcKLcPz4M_nPC1Zjg3HmlNHj39BRnw-RIC4J51CESygdc0WDmvZnl8.ZiqH1amnJrYOdGPZXwrPnK9cpiDOWAwyyxkrFqQDTbc&qid=1791559256&sr=8-7" target="_blank" class="btn-shop amazon">Amazon</a>
+                    <a href="https://www.casadellibro.com/libro-el-cuco-de-cristal/9788491293552/12673500" target="_blank" class="btn-shop casa">Casa del Libro</a>
+                </div>
+            </div>
+
+            <div class="tarjeta-libro" data-genre="desarrollo personal">
+                <div class="badge">Desarrollo personal</div>
+                <h3>El poder del ahora</h3>
+                <p class="author">Eckhart Tolle</p>
+                <img src="./images/el-poder-del-ahora.jpg" alt="portada del libro">
+                <p class="price">9.50 €</p>
+                <div class="links">
+                    <a href="https://www.amazon.es/Poder-Ahora-Gu%C3%ADa-Iluminaci%C3%B3n-Espiritual/dp/8484452069/ref=sr_1_1?__mk_es_ES=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=38ILEZTO7T5AQ&dib=eyJ2IjoiMSJ9.A1S0FQ7BA1i1zk17ngVEVBGqr9gQWvG2T01DbXqS4JQCUvEtcBFGi0onzviAWo2d_QY6FENIQQp6ivMYt1dXF_GZh_c5yfrVrYZrhjxAcR5mRo4Xvyby_LSTX4e_-12IRIqFyfQN364R_xInaUp1R2qYAvUKR8F8GeFzoXOKhJWhPUSUItGifQyOjGfuz4EE8Ln4gbt9pT6hB6b3b-RHmqLIgWwH_LOl8wTvseFv8Uavp8WPaoqMyqEZFnuPbp2VpQVeyfC-jj3FfKP6qV_ahzNmeBhL8TADbhFVFuSKXkg.hgj1x0RhAfXHi2V6Q9AEVFbRFjh-53O-12STxDWUmMU&dib_tag=se&keywords=el+poder+del+ahora&qid=1791559540&sprefix=el+poder+del+ahora%2Caps%2C130&sr=8-1" target="_blank" class="btn-shop amazon">Amazon</a>
+                    <a href="https://www.casadellibro.com/libro-el-poder-del-ahora-una-guia-para-la-iluminacion-espiritual-6-e-d/9788484452065/1159328" target="_blank" class="btn-shop casa">Casa del Libro</a>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Bookshop Murcia. Recomendaciones de lectura.</p>
+    </footer>
+
+</body>
+</html>
